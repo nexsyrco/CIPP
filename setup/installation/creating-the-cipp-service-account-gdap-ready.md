@@ -11,7 +11,7 @@
 
 ### Administration Requirements
 
-1. Must be at least **Application Administration**, **Privileged Role Administrator**, and **User Administrator** while setting up the integration. These permissions must be removed after the integration has been setup, and the application has been installed. If setup fails, you may need to switch to **Global Administrator** to ensure all necessary permissions are granted.
+1. Must be at least **Application Administration**, **Privileged Role Administrator**, and **User Administrator** while setting up the integration. If setup fails, you may need to switch to **Global Administrator** to ensure all necessary permissions are granted.
 2. Must be added to the **AdminAgents** grou&#x70;**.** This group is required for connection to the Microsoft Partner API.
 
 ### Multi-factor Authentication
