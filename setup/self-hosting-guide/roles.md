@@ -55,7 +55,7 @@ You can assign built-in roles using Entra groups. Select Edit from the Action co
 ## Custom Roles
 
 {% hint style="info" %}
-Not sure how built-in and custom roles combine when a user is in multiple Entra groups? See [How CIPP Evaluates Roles](../resources/how-cipp-evaluates-roles.md) for the precedence rules and worked examples.
+Not sure how built-in and custom roles combine when a user is in multiple Entra groups? See [How CIPP Evaluates Roles](../resources/how-cipp-evaluates-roles.md "mention") for the precedence rules and worked examples.
 {% endhint %}
 
 While CIPP only supplies the above roles by default, you can create your own custom roles and apply them to your users with `editor` or `readonly` rights, admin users are unaffected by custom roles.
