@@ -1,7 +1,3 @@
----
-description: Deploy applications using the Chocolatey package manager.
----
-
 # Defender Status
 
 This page lists the defender status for all enrolled devices in a tenant. This includes whether there are active threats, the status of various components / services, the status of scans and, whether the device requires action.
