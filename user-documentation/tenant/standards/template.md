@@ -21,7 +21,7 @@ If you select "AllTenants", you will be shown an additional dropdown for "Exclud
 {% endhint %}
 
 {% hint style="warning" %}
-Just under the tenant assignment dropdown(s), you will see a toggle called "Do not run on schedule". If you turn on this toggle, this template will only run manually. Leave this toggle off if you would like this standard to run every three hours.
+Just under the tenant assignment dropdown(s), you will see a toggle called "Do not run on schedule". If you turn on this toggle, this template will only run manually. Leave this toggle off if you would like this standard to run every twelve hours.
 {% endhint %}
 {% endstep %}
 
@@ -86,7 +86,7 @@ Once activated, Drift Management is evaluated **every twelve hours**. You will r
 {% hint style="info" %}
 Report & Alert
 
-For Drift Management templates, report and alert are automatically enabled from the available Standards [#actions](./#actions "mention").&#x20;
+For Drift Management templates, report and alert are automatically enabled from the available Standards [#actions](./#actions "mention").
 {% endhint %}
 
 * **Automatic Remediation:** Immediately reverts unauthorized changes back to the template configuration
@@ -155,13 +155,13 @@ For each standard:
 {% step %}
 #### Save Template
 
-Once all other steps are completed and all tenants show configured, click the "Save Template" button at the bottom of the left column that should now be enabled to run every three hours.
+Once all other steps are completed and all tenants show configured, click the "Save Template" button at the bottom of the left column that should now be enabled to run every twelve hours.
 {% endstep %}
 {% endstepper %}
 
 #### See It In Action
 
-{% @storylane/embed subdomain="app" linkValue="gykd6vk1y7kr" url="https://app.storylane.io/share/gykd6vk1y7kr" %}
+{% @storylane/embed subdomain="app" url="https://app.storylane.io/share/gykd6vk1y7kr" linkValue="gykd6vk1y7kr" %}
 
 {% hint style="info" %}
 If you want to see how to combine Custom Variables and Tenant Groups to provide a way to "graduate" tenants through standards, see [#using-custom-variables-to-manage-standards-templates](../../../demos/tutorials.md#using-custom-variables-to-manage-standards-templates "mention")
