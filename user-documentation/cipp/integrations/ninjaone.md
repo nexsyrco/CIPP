@@ -1,7 +1,7 @@
 # NinjaOne
 
 {% hint style="warning" %}
-Please Note the NinjaOne CIPP integration requires NinjaOne version 5.6 or above.&#x20;
+Please Note the NinjaOne CIPP integration requires NinjaOne version 5.6 or above.
 {% endhint %}
 
 The NinjaOne integration provides several different options to give you control over what is synchronised from CIPP to NinjaOne.
@@ -14,25 +14,29 @@ The Intune Device Compliance Status utilizes Graph Webhook subscriptions and sho
 For Tenant and Device information custom fields are used. For detailed Users and License information NinjaOne Documentation is used. If you do not currently have access to NinjaOne Documentation please reach out to your account manager.
 {% endhint %}
 
-### Configuring the integration
+## Configuring the Integration
 
-#### Step 1 - Obtain API Credentials
+{% stepper %}
+{% step %}
+### Obtain API Credentials
 
-1. First login to your NinjaOne instance as a System Administrator user.
-2. Browse to **Administration -> Apps -> API** (/#/administration/apps/api)
-3. Select Add in the top right.
-4. Under Application Platform select API Services (machine-to-machine)\\
-5. Fill out the details for the API Application:
-   1. Enter a Name such as '**CIPP Integration**'.
-   2. Leave Redirect URIs blank.
-   3. Select the '**Monitoring**' and '**Management**' scopes.
-   4. Select the Allowed Grant Type of '**Client Credentials**'
-   5. Click Save in the top right.
-6. After clicking Save make sure to save the displayed secret securely.
-7. Close the API application.
-8. In the table copy the '**Client ID**' and also save this securely.
+* First login to your NinjaOne instance as a System Administrator user.
+* Browse to **Administration -> Apps -> API** (/#/administration/apps/api)
+* Select Add in the top right.
+* Under Application Platform select API Services (machine-to-machine)\\
+* Fill out the details for the API Application:
+  1. Enter a Name such as '**CIPP Integration**'.
+  2. Leave Redirect URIs blank.
+  3. Select the '**Monitoring**' and '**Management**' scopes.
+  4. Select the Allowed Grant Type of '**Client Credentials**'
+  5. Click Save in the top right.
+* After clicking Save make sure to save the displayed secret securely.
+* Close the API application.
+* In the table copy the '**Client ID**' and also save this securely.
+{% endstep %}
 
-#### Step 2 - Create Custom Fields
+{% step %}
+### Create Custom Fields
 
 For synchronizing Tenant and Device data into NinjaOne CIPP makes use of custom fields. These fields need to be created manually in NinjaOne. You can choose which fields you would like to populate inside NinjaOne, so if you only wish to populate certain sections that is possible.
 
@@ -59,9 +63,11 @@ To add the custom fields:
 8. Leave the Automations permission set to None. (**Note:** the exception to this is the Intune Device Compliance field, which you should set to read only, if you wish to use a condition monitor on this field)
 9. Set the API permission to Read/Write.
 10. **Optional:** For the WYSIWYG fields you can choose if you wish for them to be expanded by default in Advanced Settings
-11. Save the settings and repeat for all the fields you wish to synchronize.\\
+11. Save the settings and repeat for all the fields you wish to synchronize.
+{% endstep %}
 
-#### Step 3 - CIPP Settings
+{% step %}
+### CIPP Settings
 
 You should now be ready to configure settings inside CIPP
 
@@ -80,8 +86,10 @@ You should now be ready to configure settings inside CIPP
 8. Set the configuration to enabled to enable automatic synchronization once every 24 hours.\\
 9. Click the Set Extension Settings button.
 10. Once the settings are saved click the '**Test Extension**' you should see a message at the top of the page saying '**Successfully Connected to NinjaOne**', if you do not see this please check your API credentials and instance name.
+{% endstep %}
 
-#### Step 4 - Mapping CIPP to NinjaOne
+{% step %}
+### Mapping CIPP to NinjaOne
 
 After the API settings are set you can now map NinjaOne items to Microsoft 365 / CIPP Items.
 
@@ -103,19 +111,18 @@ After the API settings are set you can now map NinjaOne items to Microsoft 365 /
 2. For each field you wish to populate in NinjaOne select the custom field from the dropdown menu.
 3. If the field is not displayed, make sure you have configured the correct API Permissions, Definition Scope and Type in NinjaOne.
 4. Click Save Mappings
+{% endstep %}
 
-***
+{% step %}
+### Automatically Sync CVEs from CIPP to NinjaOne
 
-#### Step 5 - Automatically Sync CVEs from CIPP to NinjaOne
-
-If enabled, CIPP will automatically attempt to send CVE information from CIPP to NinjaOne.
-This requires that scan groups are allready set up in NinjaOne and that 
+If enabled, CIPP will automatically attempt to send CVE information from CIPP to NinjaOne. This requires that scan groups are allready set up in NinjaOne and that
 
 **Configuring Defender CVE Sync**
 
 1. Inside CIPP browse to **Security & Compliance -> Defender -> CVE Management.**
 2. Click on **Schedule CVE Sync.**
-3. Select the appropriate tenant or "*All Tenants", set a frequency and click **Create Schedule.**
+3. Select the appropriate tenant or "\*All Tenants", set a frequency and click **Create Schedule.**
 
 **Configure CVE Sync**
 
@@ -131,7 +138,9 @@ This requires that scan groups are allready set up in NinjaOne and that
 4. Click on the **Scan Groups** tab then **+ Create scan group.**
 5. Enter the name as the prefix specified in the previous step.
 6. Upload the CSV file created earlier and select the correct mappings.
+{% endstep %}
+{% endstepper %}
 
-
+***
 
 {% include "../../../.gitbook/includes/feature-request.md" %}

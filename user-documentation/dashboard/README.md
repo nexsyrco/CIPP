@@ -49,7 +49,7 @@ This button will take you to the [#report-builder](./#report-builder "mention") 
 
 <summary>Test Suite Control</summary>
 
-This dropdown controls the test suite used in displaying the test information on the dashboard [#assessment-overview](./#assessment-overview "mention") and the [#identity-tab](./#identity-tab "mention") and [#devices-tab](./#devices-tab "mention"). Select a test suite from the dropdown to change the display.&#x20;
+This dropdown controls the test suite used in displaying the test information on the dashboard [#assessment-overview](./#assessment-overview "mention") and the [#identity-tab](./#identity-tab "mention") and [#devices-tab](./#devices-tab "mention"). Select a test suite from the dropdown to change the display.
 
 **Available Built-In Test Suites:**
 
@@ -127,6 +127,14 @@ These sections are clickable and will take you to the respective area in CIPP to
 <summary>Assessment Overview</summary>
 
 This card will provide you with a high-level display of how the tenant scored on the report selected in the [#report-control](./#report-control "mention") section.
+
+</details>
+
+<details>
+
+<summary>Alerts</summary>
+
+This card will show you the alerts generated for the tenant. Toggle between Active and Snooze to filter the list. You have the ability to click the clock icon to the right to set the snooze status on the alert.
 
 </details>
 

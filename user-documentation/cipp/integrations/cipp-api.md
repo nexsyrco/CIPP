@@ -105,7 +105,7 @@ The instance restarts — give it up to \~60 seconds before connecting.
 
 To add the MCP to your LLM follow the instructions provided by the LLM provider, in most cases you'll need to enter your **CIPP API URL and OAUTH credentials.** These credentials are the ID and secret returned to you by the setup.
 
-the URL used is `https://<your-cipp-api-url>/api/ExecMCP`
+the URL used is `https://<your-cipp-api-url>/api/ExecMCP` and can be found on the API page.
 
 Click **Connect**. You'll be redirected to your normal Microsoft / CIPP sign-in — log in and approve. Your LLM completes the connection and CIPP's read tools appear.
 

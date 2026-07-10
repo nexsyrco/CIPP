@@ -41,6 +41,10 @@ CIPP will manage the rotation of the secret automatically at expiration. This fu
 | Complete                       | EasyAuth is live and matches the stored app                 |
 | Error                          | Something failed; error message surfaces in the UI          |
 
+## Manual Configuration
+
+You can also manually handle configuration of SSO. Enter an existing Application (client) ID and client secret to store them directly in Key Vault — for example to rotate the secret by hand or point SSO at a different app registration. The instance must be restarted for the change to take effect.
+
 ***
 
 {% include "../../../../.gitbook/includes/feature-request.md" %}

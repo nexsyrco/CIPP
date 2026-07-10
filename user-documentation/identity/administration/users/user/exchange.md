@@ -25,9 +25,9 @@ description: This page displays information about the user's Exchange settings.
 | Set Send Quota                            | Sets the quota (in MB, GB, or TB) the mailbox is allowed to send                                                                                                                   |
 | Set Send and Receive Quota                | Sets the quota (in MB, GB, or TB) the mailbox is allowed to send and receive                                                                                                       |
 | Set Quota Warning Level                   | Sets the warning level for the quota (in MB, GB, or TB)                                                                                                                            |
-| Set Calendar Processing                   | Allows you to configure calendar processing settings such as "Automatically Accept Meeting Requests", "Allow Conflicts", etc.                                                       |
+| Set Calendar Processing                   | Allows you to configure calendar processing settings such as "Automatically Accept Meeting Requests", "Allow Conflicts", etc.                                                      |
 
-## Exchange Details
+## Exchange Information
 
 | Detail                    | Description                                                                                                                                                                        |
 | ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -51,6 +51,7 @@ description: This page displays information about the user's Exchange settings.
 | ----------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Proxy Addresses                     | A widget that allows for updating a user/mailbox proxy addresses with add, delete, and set primary capability.                                              |
 | Mailbox Permissions                 | A widget that allows for updating mailbox permissions other users can be granted to this user's mailbox.                                                    |
+| Mailbox Access                      | A widget that shows the mailboxes the user has access to. Per-row and bulk action available to remove permission                                            |
 | Calendar Permissions                | A widget that allows for updating calendar permissions other users can be granted to this user's mailbox.                                                   |
 | Contact Permissions                 | A widget that allows you to manage contact folder permissions.                                                                                              |
 | Current Mailbox Rules               | A widget that allows for reviewing any mailbox rules created on the mailbox. There are actions to enable, disable, and delete mailbox rules.                |
