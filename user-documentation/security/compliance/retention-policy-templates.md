@@ -1,14 +1,14 @@
-# DLP Policy Templates
+# Retention Policy Templates
 
-This page will allow you to manage your Purview DLP Policy templates.
+This page will allow you to manage your Purview Retention Policy templates.
 
 ## Page Actions
 
 <details>
 
-<summary>Deploy DLP Policy</summary>
+<summary>Deploy Retention Policy</summary>
 
-This will open an action drawer that will allow you deploy a DLP policy either by template or by pasting the JSON into the Parameters block. Select the tenant(s) you want to deploy the policy to, select the template or paste the JSON, and click Deploy.
+This will open an action drawer that will allow you deploy a retention policy either by template or by pasting the JSON into the Parameters block. Select the tenant(s) you want to deploy the policy to, select the template or paste the JSON, and click Deploy.
 
 </details>
 
@@ -19,7 +19,7 @@ This will open an action drawer that will allow you deploy a DLP policy either b
 This will open a drawer that will let you search configured GitHub repositories for templates to import.
 
 {% hint style="info" %}
-Be sure to check out [community-repos](../../../tools/community-repos/ "mention") for more on setting up repositories.
+Be sure to check out [community-repos](../../tools/community-repos/ "mention") for more on setting up repositories.
 {% endhint %}
 
 </details>
@@ -34,4 +34,4 @@ The table will display any templates that you have previously created.
 
 ***
 
-{% include "../../../../.gitbook/includes/feature-request.md" %}
+{% include "../../../.gitbook/includes/feature-request.md" %}

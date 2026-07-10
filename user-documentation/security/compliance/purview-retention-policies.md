@@ -22,4 +22,4 @@ The properties returned are for the Exchange PowerShell command `Get-RetentionCo
 
 ***
 
-{% include "../../../../.gitbook/includes/feature-request.md" %}
+{% include "../../../.gitbook/includes/feature-request.md" %}

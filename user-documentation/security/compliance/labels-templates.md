@@ -19,7 +19,7 @@ This will open an action drawer that will allow you deploy a sensitivity label e
 This will open a drawer that will let you search configured GitHub repositories for templates to import.
 
 {% hint style="info" %}
-Be sure to check out [community-repos](../../../tools/community-repos/ "mention") for more on setting up repositories.
+Be sure to check out [community-repos](../../tools/community-repos/ "mention") for more on setting up repositories.
 {% endhint %}
 
 </details>
@@ -34,4 +34,4 @@ The table will display any templates that you have previously created.
 
 ***
 
-{% include "../../../../.gitbook/includes/feature-request.md" %}
+{% include "../../../.gitbook/includes/feature-request.md" %}

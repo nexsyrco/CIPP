@@ -14,16 +14,17 @@ Use this expandable section to adjust the results displayed in the table below. 
 
 ## Table Details
 
-| Column                 | Description                                                                 |
-| ---------------------- | --------------------------------------------------------------------------- |
-| Display Name           | The name of the search including the UTC timestamp the search was completed |
-| Status                 | The success status of the search                                            |
-| Filter Start Date Time | The relative time of the start time of the search window                    |
-| Filter End Date Time   | The relative time of the end time of the search window                      |
-
-## Table Actions
-
-<table><thead><tr><th>Action</th><th>Description</th><th data-type="checkbox">Bulk Action Available</th></tr></thead><tbody><tr><td>View Results</td><td></td><td>false</td></tr><tr><td>Process Logs</td><td>CIPP will review the log search results for any alerts that should be generated and send them to the method you have set in <a data-mention href="../../../cipp/settings/notifications.md">notifications.md</a>.</td><td>true</td></tr></tbody></table>
+| Column        | Description                                                                                                                                                                                                |
+| ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Tenant        | The tenant the search window belongs to, shown as its default domain name (the ledger's partition key).                                                                                                    |
+| Type          | The kind of ledger entry: `Window` (a normal planned 60-minute search window), `Reconciliation` (a `RECON-*` gap-fill block), or `Manual` (a `MANUAL-*` manually queued search bridged into the pipeline). |
+| Window Start  | Start of the search window, in UTC.                                                                                                                                                                        |
+| Window End    | End of the search window, in UTC.                                                                                                                                                                          |
+| State         | Where the window sits in the V2 pipeline: `Planned`, `Created`, `Downloaded`, `Retry`, `DeadLetter` (failed permanently), or `Skipped` (unified auditing off for the tenant).                              |
+| Search Status | The underlying Graph audit-log search status (e.g. `notStarted`, `running`, `succeeded`), refreshed on each poll.                                                                                          |
+| Record Count  | Number of audit records the window's Graph search returned and downloaded.                                                                                                                                 |
+| Matched Count | Number of downloaded records that matched during alert processing.                                                                                                                                         |
+| Last Error    | The most recent error recorded for the window, if any (blank when healthy).                                                                                                                                |
 
 ***
 

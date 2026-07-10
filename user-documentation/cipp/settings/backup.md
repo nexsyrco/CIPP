@@ -72,6 +72,16 @@ The following tables will get copied into the backup:
 * TenantProperties
 * WebhookRules
 
+## Backup Replication
+
+This section allows you to replicate your backups to an external source.
+
+{% hint style="info" %}
+When enabled, each new backup is also uploaded to the external container described by the SAS URL. The SAS URL is stored securely in Key Vault. This does not copy existing backups. This will continue to push backups to the container without any consideration for storage costs, so please monitor your external storage usage.
+{% endhint %}
+
+Toggle on the category you wish to back up, paste in your container SAS URL, and click save. The SAS URL must have write and create permissions.
+
 ***
 
 {% include "../../../.gitbook/includes/feature-request.md" %}

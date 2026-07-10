@@ -25,11 +25,12 @@ Optionally toggling this on will allow you to configure various defender setting
 
 #### Android
 
-| Setting                                                                                  | Description                                                                                                                           |
-| ---------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| Connect Android devices to Microsoft Defender for Endpoint                               | Connects Android devices to Defender <mark style="color:$warning;">and enables selection of the other options in this section</mark>. |
-| Connect Android devices version 6.0.0 and above to Microsoft Defender for Endpoint (MAM) | Enables MAM-based compliance for Android 6.0+                                                                                         |
-| Block Android device access when Microsoft Defender for Endpoint is unavailable          | Blocks Android device access if Defender is unreachable.                                                                              |
+| Setting                                                                                                 | Description                                                                                                                           |
+| ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| Connect Android devices to Microsoft Defender for Endpoint                                              | Connects Android devices to Defender <mark style="color:$warning;">and enables selection of the other options in this section</mark>. |
+| Connect Android devices version 6.0.0 and above to Microsoft Defender for Endpoint (MAM)                | Enables MAM-based compliance for Android 6.0+                                                                                         |
+| Block Android device access when Microsoft Defender for Endpoint is unavailable                         | Blocks Android device access if Defender is unreachable.                                                                              |
+| Grant MTD role permissions to Microsoft Defender for Endpoint on enrolled Android COBO and COPE devices | Grants Defender for Endpoint the Mobile Threat Defense partner role on Android corporate-owned enrolled devices                       |
 
 #### macOS
 
@@ -48,14 +49,14 @@ Optionally toggling this on will allow you to configure various defender setting
 
 #### iOS / iPadOS
 
-| Setting                                                                                           | Description                                                                                                                              |
-| ------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| Connect iOS/iPadOS devices to Microsoft Defender for Endpoint                                     | Connects iOS/iPadOS devices to Defender <mark style="color:$warning;">and enables selection of the other options in this section</mark>. |
-| Connect iOS/iPadOS devices version 13.0 and above to Microsoft Defender for Endpoint (Compliance) | Enables compliance-based connection for iOS 13+.                                                                                         |
-| Enable App Sync (sending application inventory) for iOS/iPadOS devices                            | Sends application inventory for iOS/iPadOS to Defender.                                                                                  |
-| Block iOS device access when Microsoft Defender for Endpoint is unavailable                       | Blocks iOS device access if Defender is unreachable.                                                                                     |
-| Allow partner to collect iOS certificate metadata                                                 | Permits Defender to collect iOS certificate metadata.                                                                                    |
-| Allow partner to collect iOS personal certificate metadata                                        | Permits Defender to collect iOS personal certificate metadata.                                                                           |
+| Setting                                                                     | Description                                                                                                                              |
+| --------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| Connect iOS/iPadOS devices to Microsoft Defender for Endpoint               | Connects iOS/iPadOS devices to Defender <mark style="color:$warning;">and enables selection of the other options in this section</mark>. |
+| Connect iOS/iPadOS devices for app protection policy evaluation (MAM)       | Enables compliance-based connection for iOS 13+.                                                                                         |
+| Enable App Sync (sending application inventory) for iOS/iPadOS devices      | Sends application inventory for iOS/iPadOS to Defender.                                                                                  |
+| Block iOS device access when Microsoft Defender for Endpoint is unavailable | Blocks iOS device access if Defender is unreachable.                                                                                     |
+| Allow partner to collect iOS certificate metadata                           | Permits Defender to collect iOS certificate metadata.                                                                                    |
+| Allow partner to collect iOS personal certificate metadata                  | Permits Defender to collect iOS personal certificate metadata.                                                                           |
 
 #### Windows
 
