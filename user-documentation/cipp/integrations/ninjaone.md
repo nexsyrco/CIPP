@@ -133,7 +133,7 @@ If enabled, CIPP will automatically attempt to send CVE information from CIPP to
 **Create Scan Groups in NinjaOne**
 
 1. Inside CIPP browse to **Security & Compliance -> Defender -> Vulnerabilities**
-2. Select the tenant for the scan group and click **Export** then **Export to CSV** and dave the file.
+2. Select the tenant for the scan group and click **Export** then **Export to CSV** and save the file.
 3. Inside NinjaOne browse to **Administration -> Apps -> Microsoft Defender.**
 4. Click on the **Scan Groups** tab then **+ Create scan group.**
 5. Enter the name as the prefix specified in the previous step.
